@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="0dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:paddingTop="0dp"
+    tools:context="com.niyaz.chataway.MainActivity"
+    android:background="@color/colorPrimary">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:title="Chataway"
+        android:textAlignment="center"/>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/logo"
+        android:id="@+id/imageView"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/logo" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:id="@+id/uname"
+        android:hint="@string/enter_user_name" />
+
+    <Button
+        android:text="@string/login"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/upass"
+        android:layout_alignStart="@+id/upass"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/login"
+        android:onClick="onclickmain"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="104dp"
+        android:layout_height="39dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#1E19A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+        />
+
+    <Button
+        android:text="@string/register"
+        android:layout_alignTop="@+id/login"
+        android:layout_alignRight="@+id/upass"
+        android:layout_alignEnd="@+id/upass"
+        android:id="@+id/register"
+        android:onClick="onclickmain"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:layout_width="104dp"
+        android:layout_height="39dp"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="#1E19A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/upass"
+        android:layout_above="@+id/login"
+        android:layout_alignLeft="@+id/uname"
+        android:layout_alignStart="@+id/uname"
+        android:layout_marginBottom="31dp"
+        android:hint="@string/enter_password_here" />
+
+</RelativeLayout>

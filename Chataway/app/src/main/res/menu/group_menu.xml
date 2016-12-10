@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"><![CDATA[
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.MainActivity">
+
+    ]]>
+    <item
+        android:id="@+id/joingroup"
+        android:title="Join Group" />
+    <item android:title="Add Group"
+        android:id="@+id/addgroup" />/>
+
+    <item android:title="Sign Out"
+        android:id="@+id/logout"
+        app:showAsAction="never"/>/>
+
+</menu>
